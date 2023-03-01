@@ -1,35 +1,47 @@
-<!--html tags-->
-
-<!--title-->
-<h1>Hello!</h1>
-<h2>Hello!</h2>
-<h3>Hello!</h3>
-<h4>Hello!</h4>
-<h5>Hello!</h5>
-<h6>Hello!</h6>
-
-<!--unordered list-->
-<ul>
-  <li>하나</li>
-  <li>둘</li>
-  <li>셋</li>
-</ul>
-
-<!--ordered list-->
-<ol>
-  <li>하나</li>
-  <li>둘</li>
-  <li>셋</li>
-</ol>
-
-<!--anchor(link): hyperlink(http) reference필요-->
-<a href="http://google.com">Go to google.com</a>
-
-<!--tag의 다양한 attribute-->
-<!--본 화면-->
-<a href="http://google.com" target="_self">Go to google.com</a>
-<!--새 화면-->
-<a href="http://google.com" target="_blank">Go to google.com</a>
-
-<!--self-closing tag-->
-<img src="https://img.koreatimes.com" />
+<!--html 포맷: head(invisible), body(visible)-->
+<!DOCTYPE html>
+<!--웹사이트의 주된언어를 검색엔진에 알려주는 용도-->
+<html lang="kr">
+  <head>
+    <!--사이트 title의 icon-->
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <!--브라우저가 언어,특수문자를 이해하도록-->
+    <meta charset="UTF-8" />
+    <!--사이트의 description 설명-->
+    <meta name="description" content="this is website" />
+    <!--카카오톡에 공유할때 나오는 이미지-->
+    <meta
+      property="og:image"
+      content="https://d1telmomo28umc.cloudfront.net/media/seo/home2.jpg"
+    />
+    <!--사이트 title-->
+    <title>homepage name</title>
+  </head>
+  <body>
+    <!--More Tags: HTML elements reference-->
+    <audio
+      controls
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+    ></audio>
+    <!--form-->
+    <form>
+      <!--input의 type과 attribute-->
+      <label for="profile">profile photo</label>
+      <input id="profile" type="file" accept="image/*,.pdf" />
+      <!-- label-for == input-id -->
+      <!--의미있는 box / 의미없는 box(semanctic, 코드 이해 용이)-->
+      <!--div박스: 옆으로 있을 수 없음(header, main, footer로 semantic하게 대체 가능)-->
+      <div>
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" placeholder="name" />
+      </div>
+      <input type="text" disable placeholder="last name" />
+      <input type="text" placeholder="username" />
+      <input type="password" minlength="10" placeholder="password" />
+      <input typr="submit" value="create account" />
+    </form>
+  </body>
+</html>
