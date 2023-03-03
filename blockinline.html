@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*기본적으로 div의 display속성은 block이다 
+        inline은 height와 width가 없다.*/
+      div {
+        display: inline;
+        height: 150px;
+        width: 150px;
+      }
+      /*기본적으로 span의 display속성은 inline이다 */
+      span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!--block(box) : 아래로 배열, 옆에 다른 요소가 올 수 없다.-->
+    <div></div>
+    <div></div>
+    <!--inline : 옆으로 배열 => sapn, a, image-->
+    <span></span>
+    <span></span>
+  </body>
+</html>
