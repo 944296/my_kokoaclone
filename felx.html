@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*부모에 display:flex를 줘야한다.
+            justify-content: space-between; => 수평이 디폴트
+            align-items: center; =>수직이 디폴트(height조절 필요!)
+        */
+      body {
+        /*100 screen height == 회면 높이의 100%*/
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; => wrapping: 화면 크기따라 위치이동..단, width와 height는 유지*/
+      }
+      /* justify-content: space-between; => 수평이 디폴트지만,
+         flex-direction: column; => 수직으로 바꿀떄 사용!!
+         이때, align-items: center; 는 반대로...수평을 기준으로 이동한다..!  */
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        width: 300px;
+        height: 300px;
+      }
+      /*1,2,3의 div에 display:flex를 주고 수평:가운데, 수직:가운데로...!*/
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </body>
+</html>
